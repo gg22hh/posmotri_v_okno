@@ -99,10 +99,6 @@ input::placeholder {
   white-space: nowrap;
 } 
 
-.preloader-template {
-  position: absolute;
-}
-
 .title {
   color: #FFF;
   font-family: 'Oswald';
@@ -117,11 +113,13 @@ input::placeholder {
   color: #545050;
 }
 
+.page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   display: grid;
   grid-template-columns: 711px 400px;
   align-items: flex-end;
@@ -153,6 +151,7 @@ input::placeholder {
 }
 
 .content__list {
+  position: relative;
   display: flex;
   height: 298px;
   flex-direction: column;
@@ -194,7 +193,6 @@ input::placeholder {
 }
 
 .content__details {
-  position: relative; 
   display: flex;
   flex-direction: column;
   gap: 20px;
